@@ -10,6 +10,29 @@ Generate engaging videos from text prompts using AI. Perfect for creating YouTub
 
 https://github.com/user-attachments/assets/1e440ace-8560-4e12-850e-c532740711e7
 
+## Sample Videos
+
+Here are sample videos generated end-to-end directly by this project using the React/Remotion composition engine:
+
+<div align="center">
+  <video src="assets/wonders_of_space.mp4" width="100%" controls></video>
+</div>
+
+> **"Wonders of Outer Space"** — An educational video about the cosmos, galaxies, and black holes. Generated using local EdgeTTS voiceover, whisper-timestamped local word captions, Suno AI background music, and Veo3 AI B-roll video segments.
+
+<div align="center">
+  <video src="assets/deep_ocean_exploration.mp4" width="100%" controls></video>
+</div>
+
+> **"Exploring the Deep Ocean"** — A cinematic short exploring deep sea depths, bioluminescent creatures, and thermal vents. Generated using local EdgeTTS voiceover, whisper-timestamped local word captions, Suno AI background music, and Veo3 AI B-roll video segments.
+
+<div align="center">
+  <video src="assets/cosmic_lighthouse.mp4" width="100%" controls></video>
+</div>
+
+> **"The Cosmic Lighthouse"** — An educational short explaining the astonishing secrets of pulsars. Generated using local EdgeTTS voiceover, whisper-timestamped word captions, Suno AI background music, 14 xAI Grok Imagine-generated B-roll clips, and Remotion composition.
+
+
 ## Features
 
 - **AI-Powered Script Generation** - Automatically generates engaging scripts from any topic
@@ -104,6 +127,30 @@ STT_PROVIDER=whisper
 # Portrait recommended for YouTube Shorts, Instagram Reels, TikTok
 VIDEO_ORIENTATION=portrait
 ```
+
+### AI Video Generation (Muapi)
+
+```env
+# Muapi API credentials
+MUAPI_BASE_URL=https://api.muapi.ai
+MUAPI_API_KEY=your_key
+
+# Video Model to use
+MUAPI_VIDEO_MODEL=veo3-fast-text-to-video
+```
+
+**Supported Muapi Video Models:**
+- **Google Veo:** `veo3-fast-text-to-video`, `veo3-text-to-video`, `veo3.1-fast-text-to-video`, `veo3.1-text-to-video`, `veo3.1-lite-text-to-video`
+- **xAI Grok:** `grok-imagine-text-to-video`
+- **ByteDance Seedance:** `sd-2-t2v` (Seedance 2), `seedance-2-vip-text-to-video`, `seedance-pro-t2v`, `seedance-lite-t2v`
+- **Wan:** `wan2.7-text-to-video`, `wan2.6-text-to-video`, `wan2.5-text-to-video`, `wan2.1-text-to-video`
+- **LTX:** `ltx-2.3-text-to-video`, `ltx-2-pro-text-to-video`, `ltx-2-fast-text-to-video`
+- **Kling:** `kling-v3.0-pro-text-to-video`, `kling-v3.0-standard-text-to-video`
+- **Vidu:** `vidu-q3-pro-text-to-video`, `vidu-q2-pro-text-to-video`
+- **OpenAI Sora:** `openai-sora-2-pro-text-to-video`, `openai-sora-2-standard-text-to-video`
+- **MiniMax:** `minimax-hailuo-2.3-pro-t2v`, `minimax-hailuo-2.3-standard-t2v`
+- **Alibaba:** `happy-horse-1-text-to-video-1080p`
+
 
 ### Caption Settings
 
